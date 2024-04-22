@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  const phrase1 = "Never gonna give you up";
+  const phrase2 = "Never gonna let you down";
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>Song lyrics</p>
+      <p>start: {phrase1}</p>
+      <p>
+        {phrase1} {","} {phrase2}
+      </p>
     </div>
   );
 }
